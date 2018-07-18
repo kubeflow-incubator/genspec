@@ -4,9 +4,17 @@
 *.dll
 *.so
 *.dylib
+genspec
 
 # Test binary, build with `go test -c`
 *.test
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+
+# Files created by Goland IDE
+.idea/
+
+# Temporary files
+apiserver.local.config
+

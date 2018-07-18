@@ -1,0 +1,14 @@
+language: go
+
+go:
+  - "1.9"
+  - "1.10"
+
+go_import_path: github.com/kubeflow-incubator/genspec
+
+install:
+  - go build -o genspec github.com/kubeflow-incubator/genspec
+
+script:
+  - ./genspec --output swagger.json
+

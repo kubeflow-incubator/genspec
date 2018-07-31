@@ -21,6 +21,8 @@ import (
 	"k8s.io/kube-openapi/pkg/common"
 )
 
+var ApiserverLocalConfigPath = "apiserver.local.config"
+
 type Config struct {
 	Scheme *runtime.Scheme
 	Codecs serializer.CodecFactory
